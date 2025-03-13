@@ -32,7 +32,7 @@ pub struct MinuteRange {
     pub end_minutes_ago: Option<String>,
 }
 impl MinuteRange{
-    pub fn single_minute(time :i16)->MinuteRange{
+    pub fn single_minute(time :usize)->MinuteRange{
         MinuteRange{
             start_minutes_ago:Some(time.to_string()),
             end_minutes_ago:Some(time.to_string()),
